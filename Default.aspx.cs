@@ -1,9 +1,14 @@
-﻿using System;
+﻿using Negocio;
+using Dominio;
+using System;
 using System.Collections.Generic;
+using System.EnterpriseServices;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+
+
 
 namespace RestoApp
 {
@@ -11,7 +16,10 @@ namespace RestoApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(!IsPostBack)
+            {
+                
+            }
         }
     }
 }

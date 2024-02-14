@@ -16,5 +16,4 @@ namespace Dominio
         public decimal PrecioTotal { get; set; }
 
     }
-
 }

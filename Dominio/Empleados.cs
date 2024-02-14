@@ -19,6 +19,5 @@ namespace Dominio
             Mesero = 1,
             Gerente = 2
         }
-
     }
 }
