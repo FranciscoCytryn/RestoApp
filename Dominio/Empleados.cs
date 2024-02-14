@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace Dominio
 {
+    public enum PerfilUsuario
+    {
+        Mesero = 1,
+        Gerente = 2
+    }
     public class Empleados
     {
         public Empleados() { }
@@ -14,10 +19,7 @@ namespace Dominio
         public string Apellido { get; set; }
         public string CorreoElectronico { get; set; }
         public string Pass { get; set; }
-        public enum PerfilUsuario
-        {
-            Mesero = 1,
-            Gerente = 2
-        }
+        
+        public PerfilUsuario PerfilUsuario { get; set; }
     }
 }

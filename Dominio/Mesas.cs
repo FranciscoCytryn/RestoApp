@@ -11,5 +11,7 @@ namespace Dominio
         public Mesas() { }
         public int IdMesa { get; set; }
         public string Descripcion { get; set; }
+        public int IdMesero { get; set; }
+        public bool Ocupada { get; set; }
     }
 }

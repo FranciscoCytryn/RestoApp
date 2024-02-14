@@ -19,13 +19,18 @@ namespace Negocio
                 datos.EjecutarLectura();
                 while (datos.Lector.Read())
                 {
-                    Mesas mesas = new Mesas();
-                    mesas.IdMesa = (int)datos.Lector["IDMesa"];
-                    mesas.Descripcion = (datos.Lector["Descripcion"] as string) ?? "";
+                    Mesas mesas = new Mesas
+                    {
+                        IdMesa = (int)datos.Lector["IDMesa"],
+                        Descripcion = (datos.Lector["Descripcion"] as string) ?? "",
+                        IdMesero = 0,
+                        Ocupada = false
+                    };
                     lista.Add(mesas);
                 }
-                return lista;
+
             }
+
             catch (Exception ex)
             {
 
@@ -35,5 +40,7 @@ namespace Negocio
             {
                 datos.CerrarConexion();
             }
+            return lista;
         }
     }
+}

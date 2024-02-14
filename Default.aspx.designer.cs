@@ -13,5 +13,23 @@ namespace RestoApp
 
     public partial class _Default
     {
+
+        /// <summary>
+        /// RptMesas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater RptMesas;
+
+        /// <summary>
+        /// ddlMesero control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlMesero;
     }
 }
